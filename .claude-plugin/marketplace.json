@@ -1,0 +1,14 @@
+{
+  "name": "graphcore",
+  "owner": {
+    "name": "GraphCore"
+  },
+  "description": "Plugins that connect coding agents to GraphCore apps",
+  "plugins": [
+    {
+      "name": "toast",
+      "source": "./plugins/toast",
+      "description": "Work with your wedding in the Toast app"
+    }
+  ]
+}

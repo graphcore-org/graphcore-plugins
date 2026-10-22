@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "toast": {
+      "type": "http",
+      "url": "https://toast.graphcore.dev/mcp",
+      "oauth": {
+        "clientId": "graphcore-mcp",
+        "callbackPort": 8765
+      }
+    }
+  }
+}

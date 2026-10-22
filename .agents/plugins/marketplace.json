@@ -1,0 +1,20 @@
+{
+  "name": "graphcore",
+  "interface": {
+    "displayName": "GraphCore"
+  },
+  "plugins": [
+    {
+      "name": "toast",
+      "source": {
+        "source": "local",
+        "path": "./plugins/toast"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
