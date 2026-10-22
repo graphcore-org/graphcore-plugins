@@ -9,9 +9,7 @@ both Claude Code and Codex from the same directory.
 
 ## Install
 
-This repo is private: you need read access to `graphcore-org/graphcore-plugins`
-and git credentials that can clone it (SSH key, `gh auth login`, or a
-credential helper).
+You need `git` installed; no GitHub account is required.
 
 ### Claude Code
 
@@ -22,9 +20,6 @@ credential helper).
 
 Then run `/mcp`, pick the plugin's `toast` server and sign in. A browser
 opens the GraphCore sign-in page.
-
-Background auto-updates of a private marketplace need a token in your
-environment: `GITHUB_TOKEN` or `GH_TOKEN`.
 
 ### Codex
 
