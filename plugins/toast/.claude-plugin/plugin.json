@@ -1,7 +1,7 @@
 {
   "name": "toast",
   "displayName": "Toast",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Work with your wedding in the Toast app",
   "author": { "name": "GraphCore" },
   "repository": "https://github.com/graphcore-org/graphcore-plugins"
