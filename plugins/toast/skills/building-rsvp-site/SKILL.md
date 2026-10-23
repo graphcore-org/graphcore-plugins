@@ -86,9 +86,18 @@ Guests see the site only once it's published.
 The guest site is built from the couple's photos, so they come first. Ask
 the user for a folder on this computer with the photos they want on the
 site (JPEG, PNG, WebP or HEIC are all fine). Then open the wedding's Site
-tab and follow its Photos section. It uploads the folder from your shell
-and then has you look at each photo and label it. If the user has no folder
-to give you, or you can't run shell commands, the Site tab says how they can
-upload the photos in the web app instead.
+tab and follow its Photos section to upload the folder from your shell.
 
-Once the photos are in and labeled, carry on where you left off.
+Look at each photo before you send it, and send a description of what it
+shows (who, where, what's happening) as its alt text. Later, you'll choose
+which photos go where on the site by these descriptions, and guests who
+use screen readers hear them. A photo you can't look at goes up without
+one, and the Site tab then has you look at it and describe it.
+
+If the user has no folder to give you, or you can't run shell commands,
+the Site tab says how they can upload the photos in the web app instead.
+You then look at and describe each one there.
+
+Once every photo is described, carry on where you left off. If the user
+already has photos uploaded, the Site tab lists any without a description,
+and you can change any photo's description later.
