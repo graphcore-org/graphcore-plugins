@@ -85,8 +85,21 @@ Guests see the site only once it's published.
 
 The guest site is built from the couple's photos, so they come first. Ask
 the user for a folder on this computer with the photos they want on the
-site (JPEG, PNG, WebP or HEIC are all fine). Then open the wedding's Site
-tab and follow its Photos section to upload the folder from your shell.
+site (JPEG, PNG, WebP or HEIC are all fine).
+
+**In the Claude app, uploads only work once `graphcore.dev` is an allowed
+site.** You can't change this setting for the user. Before uploading, ask
+them to:
+
+1. Open **Settings**: click their name at the bottom left, then Settings.
+2. Go to **Capabilities** and scroll down to **Allowed sites**.
+3. Click **Add websites**, enter `graphcore.dev`, and click **Continue**.
+
+Ask them to tell you when they're done. If an upload later fails because the
+connection is blocked, check this setting first.
+
+Then open the wedding's Site tab and follow its Photos section to upload the
+folder from your shell.
 
 Look at each photo before you send it, and send a description of what it
 shows (who, where, what's happening) as its alt text. Later, you'll choose

@@ -30,6 +30,15 @@ codex plugin marketplace add graphcore-org/graphcore-plugins
 Then install `toast` from the GraphCore marketplace and sign
 in when prompted.
 
+### Uploading photos from the Claude app
+
+For an agent to upload photos to Toast from the Claude app, `graphcore.dev`
+has to be an allowed site:
+
+1. Open **Settings** and go to **Capabilities**.
+2. Under **Allowed sites**, click **Add websites**.
+3. Enter `graphcore.dev` and click **Continue**.
+
 ## Layout
 
 ```
