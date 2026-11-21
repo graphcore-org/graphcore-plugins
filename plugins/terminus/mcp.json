@@ -3,7 +3,7 @@
   "mcpServers": {
     "terminus": {
       "type": "streamable-http",
-      "url": "https://terminus.graphcore.dev/mcp"
+      "url": "https://terminuspainting.graphcore.dev/mcp"
     }
   }
 }

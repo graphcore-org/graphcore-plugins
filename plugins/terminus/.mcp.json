@@ -2,7 +2,7 @@
   "mcpServers": {
     "terminus": {
       "type": "http",
-      "url": "https://terminus.graphcore.dev/mcp",
+      "url": "https://terminuspainting.graphcore.dev/mcp",
       "oauth": {
         "clientId": "graphcore-mcp",
         "callbackPort": 8765

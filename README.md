@@ -6,7 +6,7 @@ both Claude Code and Codex from the same directory.
 | Plugin | What it does |
 |---|---|
 | `toast` | Connects your agent to the Toast wedding app at `toast.graphcore.dev` |
-| `terminus` | Connects your agent to Terminus Painting's estimator at `terminus.graphcore.dev` |
+| `terminus` | Connects your agent to Terminus Painting's estimator at `terminuspainting.graphcore.dev` |
 
 ## Install
 

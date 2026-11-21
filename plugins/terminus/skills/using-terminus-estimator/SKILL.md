@@ -22,7 +22,7 @@ has to sign in; you can't do it for them:
 - **Claude Code:** run `/mcp`, pick the `terminus` server, and choose Authenticate.
 - **Codex:** run `codex mcp login terminus` in a terminal.
 - **Claude on the web or the Claude app:** add a custom connector with the URL
-  `https://terminus.graphcore.dev/mcp` under Settings → Connectors, then connect it.
+  `https://terminuspainting.graphcore.dev/mcp` under Settings → Connectors, then connect it.
 
 A browser opens the Terminus Painting sign-in page. Ask the user to tell you when they're done, then call
 `open("/")` again. The tools act as the person who signed in.
@@ -80,6 +80,6 @@ What a quote goes through, as the app enforces it:
 
 ## The web app
 
-Every place has a `web:` link that opens the same thing in the web app at `https://terminus.graphcore.dev`.
+Every place has a `web:` link that opens the same thing in the web app at `https://terminuspainting.graphcore.dev`.
 Give it to the user when they would rather do something there, or when it can only be done there, such as
 invites.
