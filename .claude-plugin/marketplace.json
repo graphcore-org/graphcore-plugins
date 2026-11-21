@@ -9,6 +9,11 @@
       "name": "toast",
       "source": "./plugins/toast",
       "description": "Work with your wedding in the Toast app"
+    },
+    {
+      "name": "terminus",
+      "source": "./plugins/terminus",
+      "description": "Work with quotes in Terminus Painting's estimator app"
     }
   ]
 }

@@ -6,6 +6,7 @@ both Claude Code and Codex from the same directory.
 | Plugin | What it does |
 |---|---|
 | `toast` | Connects your agent to the Toast wedding app at `toast.graphcore.dev` |
+| `terminus` | Connects your agent to Terminus Painting's estimator at `terminus.graphcore.dev` |
 
 ## Install
 
@@ -15,10 +16,10 @@ You need `git` installed; no GitHub account is required.
 
 ```
 /plugin marketplace add graphcore-org/graphcore-plugins
-/plugin install toast@graphcore
+/plugin install toast@graphcore      # or terminus@graphcore
 ```
 
-Then run `/mcp`, pick the plugin's `toast` server and sign in. A browser
+Then run `/mcp`, pick the plugin's server (`toast` or `terminus`) and sign in. A browser
 opens the GraphCore sign-in page.
 
 ### Codex
@@ -27,12 +28,12 @@ opens the GraphCore sign-in page.
 codex plugin marketplace add graphcore-org/graphcore-plugins
 ```
 
-Then install `toast` from the GraphCore marketplace and sign
+Then install `toast` or `terminus` from the GraphCore marketplace and sign
 in when prompted.
 
 ### Uploading photos from the Claude app
 
-For an agent to upload photos to Toast from the Claude app, `graphcore.dev`
+For an agent to upload photos to Toast or Terminus from the Claude app, `graphcore.dev`
 has to be an allowed site:
 
 1. Open **Settings** and go to **Capabilities**.
