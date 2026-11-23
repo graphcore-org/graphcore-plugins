@@ -1,7 +1,7 @@
 {
   "name": "terminus",
   "displayName": "Terminus Estimator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Work with quotes in Terminus Painting's estimator app",
   "author": { "name": "GraphCore" },
   "repository": "https://github.com/graphcore-org/graphcore-plugins"
