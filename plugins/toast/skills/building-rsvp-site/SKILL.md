@@ -1,6 +1,6 @@
 ---
 name: building-rsvp-site
-description: Guides a couple through setting up their wedding in Toast and building its RSVP guest site, using the toast MCP server. Use when the user wants to create, set up, check on, or change their Toast wedding, wedding website, RSVP page, events, or guest list.
+description: Guides a couple through setting up their wedding in Toast and building its RSVP guest site, using the toast MCP server. Use when the user wants to create, set up, check on, or change their Toast wedding, wedding website, RSVP page, events, guest list, or emails to guests.
 ---
 
 # Building a Toast RSVP wedding site
@@ -35,9 +35,9 @@ account. Ask them to tell you when they're done, then call `open("/")` again.
 
 Open the wedding. Its overview shows the date, events, RSVP tallies, parties
 who haven't responded, failed emails, and the guest site's state, with
-addresses for the Events, Guests, Quiz, Site and Settings tabs. Open the tabs
-you need for the full picture, always including the Site tab, which shows
-how many photos the wedding has.
+addresses for the Events, Guests, Quiz, Messages, Site and Settings tabs.
+Open the tabs you need for the full picture, always including the Site
+tab, which shows how many photos the wedding has.
 
 Then give the user a short summary: the couple and date, the events, how many
 guests and how many have responded, how many photos there are, and whether
@@ -76,7 +76,7 @@ up details; ask for them.
    build the site" section: ask what feel they want, pick the closer
    template, agree on the site's address (its slug), and create the site.
 5. **Guests.** Offer to add guests on the Guests tab, one party per
-   invitation.
+   invitation, as step 6 describes.
 
 At the end, summarize what exists and what's left before guests can RSVP.
 Guests see the site only once it's published.
@@ -114,3 +114,45 @@ You then look at and describe each one there.
 Once every photo is described, carry on where you left off. If the user
 already has photos uploaded, the Site tab lists any without a description,
 and you can change any photo's description later.
+
+## 6. Add guests
+
+Each party is one invitation, and its guests are invited to the party's
+events. For each invitation, ask:
+
+- **Who's on it,** by the names the invitation addresses them by.
+- **Which events it's for.**
+- **Whether anyone on it is invited to fewer of those events.** For
+  example, the parents are invited to the rehearsal dinner and the
+  wedding, but their daughter only to the wedding. Give such a guest their
+  own `event_ids`. The RSVP page then asks each guest only about their own
+  events. Once the party has responded, a guest can't be invited to more
+  events.
+- **Whether anyone goes by another name.** A guest finds their invitation
+  by typing their full name, so add `nicknames` for anyone who might type
+  another one ("Sam Crossley" for "Samantha Crossley", or a maiden name).
+
+The Guests tab and each party's place describe the parameters.
+
+## 7. Email guests
+
+The Messages tab sends one email from the couple to every address on the
+invitations in an audience: guests coming to at least one event, everyone
+who RSVP'd (declines included), or guests coming to one event. Addresses
+are the ones guests gave when they RSVP'd, so an invitation that hasn't
+responded can't be reached.
+
+Sending can't be undone, so:
+
+1. Draft the subject and message with the user, and agree on the audience.
+2. Ask where replies should go (usually one of the couple's own
+   addresses) and pass it as `reply_to`. Without it, guests' replies
+   don't reach the couple.
+3. Send it with `test_to` set to the user's own address first, and ask
+   them to check it in their inbox. A test is marked as one and isn't
+   recorded.
+4. Tell the user how many addresses the real send will reach, and send
+   only once they confirm.
+
+If some addresses fail, the announcement's place lists them, and
+`retry_failed` sends to those again.
