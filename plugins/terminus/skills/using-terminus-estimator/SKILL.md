@@ -50,9 +50,10 @@ place rather than guessing:
   can do everything on it. Someone on no team sees nothing else. To join a team, a member makes an invite
   link on the team's Members page in the web app. There is no tool for invites. Only a deployment
   administrator creates teams.
-- **A team** (its id) lists its quotes and members and has `start_quote`. Its base settings, rate book and
-  quote text are places under `/estimator/<team id>/settings`. A new quote copies the base settings, and
-  changing them later does not reach existing quotes.
+- **A team** (its id) lists its quotes and members and has `start_quote`. Its pricing (what sets the
+  price, the rate book and the quote text) is at `/estimator/<team id>/settings`, with the rate book and quote
+  text as places under it. A new quote copies the team's pricing, and changing it later does not reach existing
+  quotes.
 - **A quote** (its id) is an overview: its stage, where it stands, and how a quote works. Its places are
   the web app's tabs: `/estimator/<quote id>/rooms`, `…/questions`, `…/walkthrough`, `…/price` and
   `…/history`. A room and a pricing run each open as a place of their own.
